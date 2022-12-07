@@ -45,7 +45,9 @@ const Forgot = ({ data, obtUsers }) => {
     {
       document.getElementById("estadoCancelado").innerText = "";
     }
-    const actUser = data.find(el => el.email == user.email);
+    let actUser = data.find(el => el.email == user.email);
+    console.log(data)
+    console.log(user.email)
     console.log(actUser);
     if (actUser) {
       actualisarPass(
